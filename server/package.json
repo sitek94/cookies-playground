@@ -6,6 +6,8 @@
 		"start": "nodemon server.js"
 	},
 	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"cors": "^2.8.5",
 		"express": "^4.17.3"
 	},
 	"devDependencies": {
