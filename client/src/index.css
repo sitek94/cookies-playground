@@ -1,9 +1,19 @@
+:root {
+  --font-size: 14px;
+}
+
 body {
-  height: 100vh;
+  padding: 2rem;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  display: flex;
+  gap: 4rem;
 }
 
 .buttons {
@@ -29,3 +39,5 @@ body {
   --primary-hover: #66bb6a;
   --primary-focus: rgba(76, 175, 80, 0.25);
 }
+
+

@@ -1,4 +1,5 @@
 {
+	"name": "cookies-playground",
 	"scripts": {
 		"start:client": "cd client && npm run start",
 		"start:server": "cd server && npm run start",
