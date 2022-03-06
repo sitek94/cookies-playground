@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"start:client": "cd client && npm run start",
+		"start:server": "cd server && npm run start",
+		"format": "prettier --write \"**/*{js,jsx}\""
+	},
+	"devDependencies": {
+		"prettier": "^2.5.1"
+	}
+}
