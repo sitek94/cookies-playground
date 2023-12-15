@@ -1,4 +1,3 @@
-import * as React from 'react'
 import axiosBase from 'axios'
 
 import { parseCookies } from './common.utils'
