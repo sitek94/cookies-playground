@@ -23,13 +23,13 @@ git clone https://github.com/sitek94/cookies-playground.git
 
 # Install dependencies
 cd cookies-playground
-npm install
+pnpm install
 
 # Start the server
-npm run start:server 
+pnpm run start:server 
 
 # Start the client
-npm run start:client
+pnpm run start:client
 ```
 
 ### Server
