@@ -2,7 +2,7 @@
 
 A simple playground project, where I explore and experiment with [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies).
 
-![cookies plaground preview](https://user-images.githubusercontent.com/58401630/156927705-eb153ce3-41e1-41d8-b9cc-b621c0528bd3.png)
+![cookies playground preview](https://user-images.githubusercontent.com/58401630/156927705-eb153ce3-41e1-41d8-b9cc-b621c0528bd3.png)
 
 ## Why?
 
