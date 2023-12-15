@@ -11,9 +11,10 @@ export function CookieInput({ cookie, setCookie }) {
   }
 
   function handleCheckboxChange(e) {
+    const propName = e.target.name;
     setValues(prev => ({
       ...prev,
-      [e.target.name]: !prev[e.target.name],
+      [propName]: !prev[propName],
     }))
   }
 
