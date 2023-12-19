@@ -43,6 +43,8 @@ export function App() {
     expires: expiresDate,
   }
 
+  const { name, value, ...options } = cookieInput
+
   return (
     <>
       <header className="headings">
@@ -75,8 +77,8 @@ export function App() {
             title="Server"
             description="Set cookies on the server"
             onCreate={() => server.createCookie(cookie)}
-            onRemoveLast={server.removeLastCookie}
-            onRemoveAll={server.removeAllCookies}
+            onRemoveLast={() => server.removeLastCookie(options)}
+            onRemoveAll={() => server.removeAllCookies(options)}
             onClick={refresh}
           />
           <CookieGrid

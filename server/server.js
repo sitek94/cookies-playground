@@ -30,17 +30,21 @@ app.post('/cookies', (req, res) => {
 
 app.delete('/cookies/last', (req, res) => {
   const cookies = req.cookies
+  const { name, value, expires, ...options } = req.query
+
   const cookieNames = Object.keys(cookies)
   const lastCookieName = cookieNames[cookieNames.length - 1]
 
-  res.status(202).clearCookie(lastCookieName).send('cookie deleted')
+  res.status(202).clearCookie(lastCookieName, options).send('cookie deleted')
 })
 
 app.delete('/cookies', (req, res) => {
   const { cookies } = req
+  const { name, value, expires, ...options } = req.query
+
   const cookieNames = Object.keys(cookies)
   console.log(cookieNames)
-  cookieNames.forEach(cookieName => res.clearCookie(cookieName))
+  cookieNames.forEach(cookieName => res.clearCookie(cookieName, options))
 
   res.send('all cookies deleted')
 })
