@@ -53,6 +53,12 @@ export function CookieInput({ cookie, setCookie }) {
           />
         </label>
       </div>
+      <div className="grid">
+        <label>
+          Domain
+          <input name="domain" value={cookie.domain} onChange={handleChange} />
+        </label>
+      </div>
 
       <div className="grid">
         <fieldset>
