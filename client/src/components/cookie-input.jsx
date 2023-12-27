@@ -11,9 +11,10 @@ export function CookieInput({ cookie, setCookie }) {
   }
 
   function handleCheckboxChange(e) {
+    const propName = e.target.name;
     setValues(prev => ({
       ...prev,
-      [e.target.name]: !prev[e.target.name],
+      [propName]: !prev[propName],
     }))
   }
 
@@ -50,6 +51,12 @@ export function CookieInput({ cookie, setCookie }) {
             value={Number(cookie.expires)}
             onChange={handleChange}
           />
+        </label>
+      </div>
+      <div className="grid">
+        <label>
+          Domain
+          <input name="domain" value={cookie.domain} onChange={handleChange} />
         </label>
       </div>
 

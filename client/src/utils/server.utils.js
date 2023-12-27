@@ -1,4 +1,3 @@
-import * as React from 'react'
 import axiosBase from 'axios'
 
 import { parseCookies } from './common.utils'
@@ -30,20 +29,22 @@ export async function createCookie(cookie) {
   }
 }
 
-export async function removeLastCookie() {
+export async function removeLastCookie(options) {
   try {
     await axios.delete('/cookies/last', {
       withCredentials: true,
+      params: options,
     })
   } catch (error) {
     console.log(error)
   }
 }
 
-export async function removeAllCookies() {
+export async function removeAllCookies(options) {
   try {
     await axios.delete('/cookies', {
       withCredentials: true,
+      params: options,
     })
   } catch (error) {
     console.log(error)
